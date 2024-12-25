@@ -1,0 +1,6 @@
+setuptools==65.6.3
+numpy==1.26.4
+opencv-python==4.9.0.80
+torch==2.5.1
+matplotlib==3.5.1
+ultralytics==8.3.31
