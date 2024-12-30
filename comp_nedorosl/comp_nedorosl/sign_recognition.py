@@ -156,6 +156,9 @@ class Controller(Node):
                     class_conf[class_name] = conf
                 else:
                     self.get_logger().info(f'bbox для {class_name} не содержит пикселей.')
+                    
+            cv2.imshow('YOLOv11', self.color_image)
+	    cv2.waitKey(1)
 
             # Определяем действия на основе объектов
             if (decoder_class['right'] in class_distances) and (class_conf[decoder_class['right']] > 0.65) and \
